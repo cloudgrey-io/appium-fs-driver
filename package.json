@@ -1,0 +1,66 @@
+{
+  "name": "appium-fs-driver",
+  "version": "0.0.0",
+  "description": "Appium driver for the *nix filesystem",
+  "main": "./build/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "build",
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rm -rf node_modules && rm -f package-lock.json && npm install",
+    "build": "gulp transpile",
+    "mocha": "mocha",
+    "prepare": "gulp prepublish",
+    "test": "gulp once",
+    "e2e-test": "gulp e2e-test",
+    "watch": "gulp watch",
+    "coverage": "gulp coveralls",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
+    "precommit-test": "REPORTER=dot gulp once",
+    "lint": "gulp lint",
+    "lint:fix": "gulp eslint --fix"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "precommit-test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appium/appium-fs-driver.git"
+  },
+  "keywords": [
+    "appium",
+    "filesystem"
+  ],
+  "author": "Appium <maintainers@appium.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/appium/appium-fs-driver/issues"
+  },
+  "homepage": "https://github.com/appium/appium-fs-driver#readme",
+  "devDependencies": {
+    "appium-gulp-plugins": "^4.1.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint-config-appium": "^4.0.1",
+    "gulp": "^4.0.2",
+    "mocha": "^6.2.0",
+    "pre-commit": "^1.2.2",
+    "webdriverio": "^5.12.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "appium-base-driver": "^3.20.1",
+    "appium-support": "^2.32.0",
+    "asyncbox": "^2.5.3",
+    "bluebird": "^3.5.5",
+    "lodash": "^4.17.15",
+    "request-promise": "^4.2.4",
+    "teen_process": "^1.15.0",
+    "yargs": "^13.3.0"
+  }
+}
