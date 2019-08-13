@@ -58,9 +58,11 @@
     "appium-support": "^2.32.0",
     "asyncbox": "^2.5.3",
     "bluebird": "^3.5.5",
+    "glob": "^7.1.4",
     "lodash": "^4.17.15",
     "request-promise": "^4.2.4",
     "teen_process": "^1.15.0",
+    "uuid": "^3.3.2",
     "yargs": "^13.3.0"
   }
 }
