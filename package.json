@@ -30,7 +30,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/appium/appium-fs-driver.git"
+    "url": "git+https://github.com/cloudgrey-io/appium-fs-driver.git"
   },
   "keywords": [
     "appium",
@@ -39,9 +39,9 @@
   "author": "Appium <maintainers@appium.io>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/appium/appium-fs-driver/issues"
+    "url": "https://github.com/cloudgrey-io/appium-fs-driver/issues"
   },
-  "homepage": "https://github.com/appium/appium-fs-driver#readme",
+  "homepage": "https://github.com/cloudgrey-io/appium-fs-driver#readme",
   "devDependencies": {
     "appium-gulp-plugins": "^4.1.0",
     "chai": "^4.2.0",
